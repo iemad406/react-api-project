@@ -70,15 +70,6 @@ npm start
 
 ## 🔑 Environment Variables
 
-Create a `.env` file in the root directory:
-
-```env
-REACT_APP_API_KEY=your_api_key_here
-```
-
-⚠️ Never expose your API key publicly.
-
----
 
 ## 🔌 API Integration
 
