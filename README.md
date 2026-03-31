@@ -110,12 +110,6 @@ https://api.hotels-api.com/v1/hotels/search
 
 ---
 
-## 📸 Screenshots
-
-*(Add screenshots here later)*
-
----
-
 ## 👨‍💻 Author
 
 **Ibrahim Shakhatreh**
