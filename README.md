@@ -66,11 +66,6 @@ npm install
 npm start
 ```
 
----
-
-## 🔑 Environment Variables
-
-
 ## 🔌 API Integration
 
 The app fetches hotel data using:
