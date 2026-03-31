@@ -1,16 +1,145 @@
-# React + Vite
+# 🌍 Hotel Explorer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application that allows users to explore countries and fetch hotels dynamically using a public API. The app provides an interactive UI with tables and cards to display hotel details and amenities.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🌐 Fetch and display **countries list**
+* 🏨 Get **hotels by selected country**
+* 📊 Display hotels in a **structured table**
+* 🧾 Show **hotel amenities as cards**
+* ⚡ Fast and responsive UI using **React + Bootstrap**
+* 🔄 Dynamic routing using **React Router**
+* ❌ Handles empty states and API errors
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React.js
+* **Styling:** Bootstrap (React-Bootstrap)
+* **Routing:** React Router DOM
+* **API:** Hotels API
+* **JavaScript:** ES6+
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── Show.jsx                # Countries table
+│   ├── ShowHotels.jsx         # Hotels table + amenities
+│   ├── CardHotelAmenities.jsx # Card UI for amenities
+│
+├── pages/
+│   ├── Hotels.jsx             # Hotels page (routing target)
+│
+├── App.js                     # Routes configuration
+├── index.js                   # Entry point
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/hotel-explorer.git
+cd hotel-explorer
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the app
+
+```bash
+npm start
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+REACT_APP_API_KEY=your_api_key_here
+```
+
+⚠️ Never expose your API key publicly.
+
+---
+
+## 🔌 API Integration
+
+The app fetches hotel data using:
+
+```
+https://api.hotels-api.com/v1/hotels/search
+```
+
+## 🧠 How It Works
+
+1. User selects a **country**
+2. App sends request to fetch hotels
+3. Redirects to **Hotels page**
+4. Displays:
+
+   * Hotels in table format
+   * Amenities as cards
+
+---
+
+## ⚠️ Known Limitations
+
+* Some countries may return **no hotel data**
+* API has **rate limits (429 error)**
+* Data depends on external API availability
+
+---
+
+## 💡 Future Improvements
+
+* 🔍 Search & filter hotels
+* 📄 Pagination for large datasets
+* ⭐ Sort by rating
+* 🗺️ Map integration (Google Maps)
+* 🔐 Move API calls to backend (Laravel)
+* ⏳ Loading spinner & better error UI
+
+---
+
+## 📸 Screenshots
+
+*(Add screenshots here later)*
+
+---
+
+## 👨‍💻 Author
+
+**Ibrahim Shakhatreh**
+
+* Full-Stack Developer
+* Backend Focus (Laravel + Python)
+
+---
+
+## ⭐ Support
+
+If you like this project:
+
+* ⭐ Star the repo
+* 🍴 Fork it
+* 📢 Share it
+
+---
